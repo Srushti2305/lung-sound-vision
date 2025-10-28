@@ -1,0 +1,7 @@
+project_id = "kehzkdttctojjkeizqqj"
+
+[functions.analyze-image]
+verify_jwt = false
+
+[functions.analyze-audio]
+verify_jwt = false
