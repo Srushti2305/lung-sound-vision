@@ -62,10 +62,6 @@ const Home = () => {
                 <Zap className="w-4 h-4 text-accent" />
                 <span>Instant Results</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-primary" />
-                <span>Trusted by Healthcare Professionals</span>
-              </div>
             </div>
           </div>
         </div>
