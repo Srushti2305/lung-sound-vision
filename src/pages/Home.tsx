@@ -148,30 +148,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-r from-primary to-accent text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">98%</div>
-              <div className="text-sm opacity-90">Accuracy Rate</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">&lt;30s</div>
-              <div className="text-sm opacity-90">Analysis Time</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">50k+</div>
-              <div className="text-sm opacity-90">Scans Analyzed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-sm opacity-90">Availability</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
