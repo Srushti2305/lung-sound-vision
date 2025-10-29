@@ -59,10 +59,6 @@ const Home = () => {
             
             <div className="pt-8 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-primary" />
-                <span>HIPAA Compliant</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <Zap className="w-4 h-4 text-accent" />
                 <span>Instant Results</span>
               </div>
@@ -168,9 +164,6 @@ const Home = () => {
               Start Free Diagnosis
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <p className="text-sm text-muted-foreground mt-4">
-              ⚠️ This is a preliminary screening tool. Always consult healthcare professionals for proper diagnosis.
-            </p>
           </Card>
         </div>
       </section>
