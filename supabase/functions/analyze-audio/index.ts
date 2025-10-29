@@ -106,14 +106,20 @@ Be thorough and explain how the audio analysis helps differentiate between simil
       throw new Error("No response from AI");
     }
 
-    // Extract JSON from response
+    // Extract JSON from response (strip markdown code blocks if present)
     let analysisResult;
     try {
-      const jsonMatch = aiResponse.match(/\{[\s\S]*\}/);
+      let cleanedResponse = aiResponse.trim();
+      
+      // Remove markdown code blocks
+      cleanedResponse = cleanedResponse.replace(/```json\s*/g, '').replace(/```\s*/g, '');
+      
+      // Extract JSON object
+      const jsonMatch = cleanedResponse.match(/\{[\s\S]*\}/);
       if (jsonMatch) {
         analysisResult = JSON.parse(jsonMatch[0]);
       } else {
-        analysisResult = JSON.parse(aiResponse);
+        analysisResult = JSON.parse(cleanedResponse);
       }
     } catch (parseError) {
       console.error("Failed to parse AI response:", aiResponse);
